@@ -23,6 +23,10 @@ sudo npm install es6-promise whatwg-fetch -S
 ```
 sudo npm install express body-parser -S
 ```
+## swipe插件
+```
+sudo npm install swipe-js-iso react-swipe -S
+```
 ## 在package.json里安装执行命令：scripts
 ```
 "start","webpack-dev-server --port 5000 --open --progress --colors"，
