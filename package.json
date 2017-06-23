@@ -1,0 +1,24 @@
+{
+  "name": "reactwebapp",
+  "version": "1.0.0",
+  "description": "``` sudo npm init -y ``` ##webpack ``` sudo npm install webpack webpack-dev-server ``` ##babel ``` sudo npm install babel-core babel-loader bable-preset-es2015 babel-preset-stage-0 babel-preset-react css-loader style-loader less-loader html-webpack-plugin -D ``` ##react ``` sudo npm install react redux react-redux react-router-dom -S ``` ##fetch ``` sudo npm install es6-promise whatwg-fetch -D ``` ##express ``` sudo npm install express -S ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "es6-promise": "^4.1.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0"
+  }
+}
