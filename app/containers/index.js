@@ -39,7 +39,7 @@ class App extends Component{
         this.setState({
             done:true
         });
-        console.log(this.props.userActions);
+        // console.log(this.props.userActions);
     }
 }
 export default connect(
