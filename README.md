@@ -54,4 +54,5 @@ sudo npm install swipe-js-iso react-swipe -S
 localStorage
 getStorage
 promise
+getBoundingClientRect()
 ```
