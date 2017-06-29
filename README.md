@@ -32,6 +32,10 @@ sudo npm install swipe-js-iso react-swipe -S
 "start","webpack-dev-server --port 5000 --open --progress --colors"，
 "build","webpack -p"
 ```
+## 项目启动
+    
+    npm start
+
 ## 目录结构
 ```
 - components组件：木偶组件
@@ -40,4 +44,13 @@ sudo npm install swipe-js-iso react-swipe -S
         -subpage：智能组件
         -index.js
 - index.js 用来控制显示哪一个页面
+- store onlyOne 一个页面只能有一个store
+- actions 用户发布动作
+- reducers 定义发布动作的规则
+- action-types 存储action的名字
+```
+### 项目应用知识点
+```
+localStorage
+getStorage
 ```
