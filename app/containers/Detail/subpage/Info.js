@@ -4,13 +4,14 @@ export default class Info extends Component{
     render(){
         return(
             <div>
-                Info
+            <img src={}/>
             </div>
         )
     }
-    componentDifMount(){
+    componentDidMount(){
         getInfo(this.props.id).then(res=>res.json()).then(data=>{
             console.log(data);
         })
+
     }
 }
