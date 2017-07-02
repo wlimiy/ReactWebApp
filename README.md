@@ -34,7 +34,12 @@ sudo npm install swipe-js-iso react-swipe -S
 ```
 ## 项目启动
     
+    server.js启动
     npm start
+
+## 项目效果图
+
+![Home](https://github.com/wlimiy/ReactWebApp/tree/master/app/src/Home.png)
 
 ## 目录结构
 ```
