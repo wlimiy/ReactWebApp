@@ -17,16 +17,16 @@ export default class LoadMore extends Component{
         this.fn=()=>{
             clearTimeout(this.timer);//清掉旧的定时器
             this.timer=setTimeout(()=>{
-                console.log('滚动')
+                // console.log('滚动')
                 //先判断是否正在加载，直接return
                 if(this.props.isLoading){
                     return
                 }
                 //判断按钮距离屏幕顶端的调试和可视窗口的高度
                 let screen=window.screen.height;//可视窗口的高度
-                console.log(screen);
+                // console.log(screen);
                 let top=this.refs.more.getBoundingClientRect().top;//加载更多按钮距离屏幕项端高度
-                console.log(top);
+                // console.log(top);
                 if(top<screen){//如果按钮进入可视窗口
                     this.props.loadMore();
                 }

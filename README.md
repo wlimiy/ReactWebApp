@@ -34,7 +34,7 @@ sudo npm install swipe-js-iso react-swipe -S
 ```
 ## 项目启动
     
-    server.js启动
+    mock>server.js启动
     npm start
 
 ## 项目效果图

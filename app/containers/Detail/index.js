@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import HeaderComponent from '../../components/HeaderComponent';
-import Info from '../../containers/Detail/subpage/Info'
+import Info from '../../containers/Detail/subpage/Info';
+import Comment from '../../containers/Detail/subpage/Comment';
 //通过路由渲染的组件都会在this.props上增加很多属性，例如history,match等
 export default class Detail extends Component{
     render(){
@@ -13,6 +14,7 @@ export default class Detail extends Component{
             <Info id={this.props.match.params.id}/>
             {/*购买和收藏*/}
             {/*评论*/}
+            <Comment id={this.props.match.params.id}/>
             </div>
         )
     }
