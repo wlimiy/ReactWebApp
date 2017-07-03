@@ -1,5 +1,7 @@
 let express=require('express');
 let app=express();
+let bodyParser=require('body-parser');
+app.use(bodyParser.urlencoded({extended:true}));
 app.listen(3000,function () {
     console.log(3000);
 });
@@ -30,3 +32,13 @@ app.get('/api/detail/comment/:id/:page',(req,res)=>{
     // console.log(req.params.page);
     res.send(comment);
 });
+//评价列表
+let orderList=require('./orderlist/orderList');
+app.get('/api/orderlist/:username',(req,res)=>{
+    res.send(orderList);
+});
+//提交评论
+app.post('/api/comment',(req,res)=>{
+    console.log(req.body);
+    res.send({msg:'成功'})
+})
