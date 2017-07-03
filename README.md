@@ -42,6 +42,8 @@ sudo npm install swipe-js-iso react-swipe -S
 ![Home](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/Home.png)
 
 ![Detail](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/detail.png)
+
+![Login](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/login.png)
 ## 目录结构
 ```
 - components组件：木偶组件

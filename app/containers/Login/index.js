@@ -29,7 +29,7 @@ class Login extends Component{
         this.props.userActions.update(info);
         //登录成功跳转到用户页面
         if(this.props.match.params.route){
-            this.props.history.push(this.props.match.params.route)
+            this.props.history.push(decodeURIComponent(this.props.match.params.route))
         }else{
             this.props.history.push('/user')
         }

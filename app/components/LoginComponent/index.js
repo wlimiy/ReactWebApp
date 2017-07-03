@@ -16,7 +16,7 @@ export default class LoginComponent extends Component{
                     onChange={this.changeValue.bind(this)}
                     placeholder="请输入用户名"
                     />
-                <button onClick={this.login.bind(this)}>登录</button>
+                <button onClick={this.login.bind(this)} className='back'>登录</button>
             </div>
         )
 

@@ -1,9 +1,6 @@
 import React,{Component} from 'react';
 import './index.less'
 export default class HeaderComponent extends Component{
-    back(){
-        this.props.history.go(-1);
-    }
     render(){
         return(
             <div className='back header-component'>
@@ -13,5 +10,13 @@ export default class HeaderComponent extends Component{
                 </span>
             </div>
         )
+    }
+    back(){
+        if(this.props.back){
+            this.props.history.push(this.props.back);//手动跳转到想要返回的路径
+        }else {
+            this.props.history.go(-1);
+        }
+
     }
 }
