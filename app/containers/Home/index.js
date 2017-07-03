@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import HomeHeader from './Home-Header';
+import HomeHeader from '../../components/HomeHeader';
 import Slider from '../../components/Slider/index';
 import Ad from './subpage/Ad';
 import List from './subpage/List';
