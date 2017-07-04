@@ -4,6 +4,8 @@ import HeaderComponent from '../../components/HeaderComponent';
 import Info from '../../containers/Detail/subpage/Info';
 import Comment from '../../containers/Detail/subpage/Comment';
 import Buy from '../../components/Buy';
+import * as Actions from '../../actions/store';
+import {bindActionCreators} from 'redux';
 //通过路由渲染的组件都会在this.props上增加很多属性，例如history,match等
 class Detail extends Component{
     constructor(){
@@ -31,11 +33,11 @@ class Detail extends Component{
     store(){
         //验证是否登录，如果没登录让他去登录，如果登录成功再跳回详情页
         let flag=this.checkLogin();
-        if(!flag){
+        if(!flag){//如果没登录则跳转到登录页
             this.props.history.push('/login/'+encodeURIComponent('/detail/'+this.props.match.params.id));
         }
         let id = this.props.match.params.id;
-        if(this.state.isStore){
+        if(this.state.isStore){//如果收藏过
             //在store中移除掉
             this.props.storeActions.remove(id);
         }else{
@@ -84,6 +86,11 @@ export default connect(
         return {
             userInfo:state.userInfo,
             store:state.store//这里存放是的收藏的数组
+        }
+    },
+    dispatch=>{
+        return {
+            storeActions:bindActionCreators(Actions,dispatch)
         }
     }
 )(Detail)

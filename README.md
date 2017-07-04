@@ -41,7 +41,7 @@ sudo npm install swipe-js-iso react-swipe -S
 
 ![Home](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/Home.png)
 
-![Detail](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/detail.png)
+![Detail](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/detail1.png)
 
 ![Login](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/login.png)
 
