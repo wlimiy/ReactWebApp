@@ -33,6 +33,8 @@ sudo npm install swipe-js-iso react-swipe -S
 >自动加上css前缀
 
 ```
+sudo npm install postcss-loader -D
+
 module:{
         rules:[
             {test:/\.js$/,use:'babel-loader',exclude:/node_modules/},
