@@ -13,6 +13,7 @@ export default class Detail extends Component{
             {/*商户信息*/}
             <Info id={this.props.match.params.id}/>
             {/*购买和收藏*/}
+            <Buy/>
             {/*评论*/}
             <Comment id={this.props.match.params.id}/>
             </div>
