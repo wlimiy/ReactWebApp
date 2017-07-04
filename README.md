@@ -26,7 +26,56 @@ sudo npm install express body-parser -S
 ## swipe插件
 ```
 sudo npm install swipe-js-iso react-swipe -S
+
 ```
+## postcss-loader 插件
+
+>自动加上css前缀
+
+```
+module:{
+        rules:[
+            {test:/\.js$/,use:'babel-loader',exclude:/node_modules/},
+            {test:/\.less$/,use:extract.extract(['css-loader',
+            {
+                loader:'postcss-loader',
+                options:{
+                    plugins:[
+                       require('autoprefixer') 
+                    ]
+                }
+                
+            }
+            'less-loader'])}
+        ]
+    }
+```
+
+## extract-text-webpack-plugin 插件
+
+> 主要用于style样式标签合并为link标签,会生成build.css
+
+```
+sudo npm install extract-text-webpack-plugin --save-dev
+
+在webpack.config.js中引入
+
+let ExtractTextPlugin=require('extract-text-webpack-plugin');
+let extract=new ExtractTextPlugin('build.css');
+module:{
+        rules:[
+            {test:/\.js$/,use:'babel-loader',exclude:/node_modules/},
+            {test:/\.less$/,use:extract.extract(['css-loader','less-loader'])}
+        ]
+    }
+plugins:[
+        extract,
+        new htmlWebpackPlugin({
+            template:'./app/index.html'
+        })
+    ],
+```
+
 ## 在package.json里安装执行命令：scripts
 ```
 "start","webpack-dev-server --port 5000 --open --progress --colors"，
@@ -36,6 +85,19 @@ sudo npm install swipe-js-iso react-swipe -S
     
     mock>server.js启动
     npm start
+
+## 项目打包
+
+    npm run build
+    最后打包成dist文件夹，包含bundle.js，index.html
+    要把bundle.js拆分，把第三方插件拆分出来
+    entry:{
+        index:'./app/index.js',
+        vendor:['react','react-dom','redux','react-redux','react-router-dom']
+    }
+    output:{
+            filename:'[name].js',//打包出的文件名
+        },
 
 ## 项目效果图
 

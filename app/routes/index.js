@@ -4,6 +4,7 @@ import Detail from '../containers/Detail';
 import Login from '../containers/Login';
 import User from '../containers/User';
 import City from '../containers/City';
+import Search from '../containers/Search';
 //路由两种类型 HashRouter BrowserRouter
 import {
     HashRouter as Router,//提供一个路由容器
@@ -23,6 +24,7 @@ export default class RouterMap extends Component{
                         <Route path='/login/:route?' component={Login}/>
                         <Route path='/user' component={User}/>
                         <Route path='/city' component={City}/>
+                        <Route path='/search/:kind/:keyword?' component={Search}/>
                     </Switch>
                 </Router>
             </div>
