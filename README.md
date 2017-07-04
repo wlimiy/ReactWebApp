@@ -46,6 +46,8 @@ sudo npm install swipe-js-iso react-swipe -S
 ![Login](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/login.png)
 
 ![comment](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/comment.png)
+
+![city](https://github.com/wlimiy/ReactWebApp/blob/master/app/src/city.png)
 ## 目录结构
 ```
 - components组件：木偶组件
@@ -65,4 +67,5 @@ localStorage
 getStorage
 promise
 getBoundingClientRect()
+flex
 ```
